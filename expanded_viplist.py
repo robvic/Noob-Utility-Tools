@@ -1,6 +1,8 @@
 import requests
 import csv
 import os
+import time
+import random
 from bs4 import BeautifulSoup
 
 # TODO:
@@ -43,21 +45,26 @@ with open('./texts/viplist.csv', newline='') as csvfile:
         players.append(player_tuple)
         #print(player_tuple)
 
-url = 'https://tibiantis.info/stats/online'
-data = scrape_table_data(url)
+def show_data(data):
+    os.system('cls')
+    print("---------------EXPANDED VIP---------------")
+    for key, value in data.items():
+        try:
+            for player, type in players:
+                if player.lower().strip() == value[1].lower().split("(")[0]:
+                    if type == "enemy":
+                        color = bcolors.WARNING
+                    elif type == "friend":
+                        color = bcolors.OKGREEN
+                    else:
+                        color = bcolors.OKCYAN
+                    print(f"{color}{player}{bcolors.ENDC}")
+        except IndexError:
+            pass
 
-os.system('cls')
-print("---------------EXPANDED VIP---------------")
-for key, value in data.items():
-    try:
-        for player, type in players:
-            if player.lower().strip() == value[1].lower().split("(")[0]:
-                if type == "enemy":
-                    color = bcolors.WARNING
-                elif type == "friend":
-                    color = bcolors.OKGREEN
-                else:
-                    color = bcolors.OKCYAN
-                print(f"{color}{player}{bcolors.ENDC}")
-    except IndexError:
-        pass
+url = 'https://tibiantis.info/stats/online'
+while True:
+    data = scrape_table_data(url)
+    show_data(data)
+    time.sleep(5*60+int(random.random()*50))
+
