@@ -21,7 +21,7 @@ There will be also an integrarion with Discord, if preferable.
 
 # Status
 **Progress:** 
-![40%](https://progress-bar.dev/70)
+![40%](https://progress-bar.dev/40)
 
 - [x] Main functionalities
 - [x] User testing
