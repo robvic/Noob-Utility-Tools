@@ -1,10 +1,10 @@
 ![Build Status](https://img.shields.io/badge/build-pending-yellow)
 ![Version](https://img.shields.io/badge/version-0.1.0-blue)
 
-#About
+# About
 Auxiliary program for quality of life and performance improvement on common tasks for Tibia players.
 
-#Functionalities
+# Functionalities
 |Proximity Alarm | Sound alert for monster/player entering the screen.|
 |Mana Readiness | Sound beep to make runemakers aweare about how full are they mana bars.|
 |Fishing Overlay | Visual counting for fishing attempts and sound cue for fish capture.|
@@ -13,11 +13,11 @@ Auxiliary program for quality of life and performance improvement on common task
 |Player Scanner | Related character character detection.|
 |House Scout | Active house scanning and bidding automation.|
 
-#Usage
+# Usage
 Soon there will be a downloadable package on the release section with one interface containing all funcionalities.
 There will be also an integrarion with Discord, if preferable.
 
-#Status
+# Status
 **Progress:** 
 ![40%](https://progress-bar.dev/70)
 
