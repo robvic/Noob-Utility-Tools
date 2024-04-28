@@ -5,6 +5,8 @@
 Auxiliary program for quality of life and performance improvement on common tasks for Tibia players.
 
 # Functionalities
+|Component | Description|
+|----------|------------|
 |Proximity Alarm | Sound alert for monster/player entering the screen.|
 |Mana Readiness | Sound beep to make runemakers aweare about how full are they mana bars.|
 |Fishing Overlay | Visual counting for fishing attempts and sound cue for fish capture.|
